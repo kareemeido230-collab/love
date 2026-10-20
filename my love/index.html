@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="index.css">
+    <title>my love</title>
+</head>
+<body>
+    
+    <div class="box">
+    <form action="">
+        <h1>signin</h1>
+        <label for="text" class="text">your name <i class="fa-solid fa-user"></i></label>
+        <input type="text" name="name" id="text" required>
+        <label for="password" class="password">password <i class="fa-solid fa-lock"></i></label>
+        <input type="text" name="password" id="password" required>
+        <input type="submit" value="enter" id="submit">
+    </form>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let password = document.getElementById('password');
+        let submit = document.getElementById('submit');
+        let form = document.querySelector('form');
+        submit.onclick = function(){
+            if(text.value == 'ألفت' && password.value == 'بحبك يا كيمو'){
+                form.action = 'main.html'
+            }else{
+                alert('ممنوع الدخول للمجانين')
+            }
+        }
+
+    </script>
+</body>
+</html>
